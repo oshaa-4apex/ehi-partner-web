@@ -98,8 +98,6 @@ body.dark .link { color: #9db4ee; }
 .btn.green { background: var(--green); }
 .btn.small { padding: 8px 12px; border-radius: 10px; font-size: 13px; }
 .hint { font-size: 13px; color: var(--muted); }
-.demo-notice { margin: 0 0 14px; padding: 10px 12px; border: 1px solid #f0d98a; border-radius: 10px; background: var(--amber-bg); color: var(--ink); font-size: 12px; line-height: 1.5; }
-.demo-notice strong { color: var(--amber); }
 .error { background: #fde8ec; color: #9d1c34; border-radius: 10px; padding: 10px 12px; font-size: 13px; font-weight: 700; margin-bottom: 12px; }
 body.dark .error { background: #3d1822; color: #ffb4c0; }
 .lang-row, .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }

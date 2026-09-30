@@ -62,7 +62,7 @@ const state = {
   earnMonth: "2026-09",
   sheet: "",
   declineReason: DECLINE[0],
-  selectedJob: "DEMO-24091",
+  selectedJob: "EHI-24091",
   regStep: 0,
   reference: "",
   statusHit: false,
@@ -88,13 +88,13 @@ const state = {
   leaveNote: "",
   regions: ["Western", "Central", "Southern", "Sabaragamuwa"],
   partner: {
-    id: "DEMO-1528",
-    name: "Demo Driver",
-    first: "Demo",
+    id: "1528",
+    name: "Oshada Pabasara Galappaththi",
+    first: "Oshada",
     role: "Driver",
-    phone: "0000000000",
-    email: "driver@example.com",
-    plate: "DEMO-0001",
+    phone: "+94761891321",
+    email: "oshada4apex@gmail.com",
+    plate: "ND-9012",
     vehicle: "Toyota Prius · Semi luxury car",
     model: "Toyota Prius",
     category: "Car · Semi luxury",
@@ -102,12 +102,12 @@ const state = {
     baggageSize: "Medium",
     baggageCapacity: "2 large bags",
     vehiclePhoto: "",
-    address: "Demo address, Colombo",
+    address: "42/5 Temple Road, Moratuwa",
     region: "Western",
     driverStatus: "Active",
     driverCategory: "Individual Driver",
-    supplierOwner: "Demo Owner",
-    supplier: "Demo Transport",
+    supplierOwner: "Nimal Perera",
+    supplier: "Apex Transport",
     joined: "2024-03-12",
     photo: "",
     seats: 3,
@@ -121,23 +121,23 @@ const state = {
     { name: "German", level: "Basic", dots: 1 },
   ],
   jobs: [
-    Object.assign(job("DEMO-44212", "Arrival", "Sample Guest 1", 3, "Arrival", "30 September 2026", "02:38", "Demo Airport", "Demo Hotel", "Western", "Assigned", 0, 0, "DEMO 001", [], []), {
+    Object.assign(job("44212", "Arrival", "AVERIANOV SERGEI", 3, "Arrival", "30 September 2026", "02:38", "Bandaranaike Airport", "Eden Beruwala", "Western", "Assigned", 0, 0, "QR 662", [], []), {
       service: "Arrival",
       trf: "A-H",
       pair: "Airport → Hotel",
       fleet: "Car",
       group: "Individual",
-      combined: "DEMO-44216",
+      combined: "44216",
       km: 98,
       fromDate: "30 Sep 2026",
       toDate: "30 Sep 2026",
-      rep: { name: "Demo Airport Representative", phone: "0000000000" },
+      rep: { name: "Dushan Fonseka – Airport Rep", phone: "0703464346" },
       guide: "",
-      booking: "DEMO-BOOKING-1",
-      clients: ["Sample Guest 1", "Sample Guest 2", "Sample Guest 3"],
+      booking: "1238935",
+      clients: ["AVERIANOV SERGEI", "AVERIANOVA NADEZHDA", "CHIVILDEEVA SOFIIA"],
       clientStatus: "Client Transfer Complete",
-      agent: "Demo Travel Desk",
-      hotel: "Demo Hotel",
+      agent: "Paks Moscow",
+      hotel: "The Eden Beruwala (ex. Occidental Eden Beruwala)",
       pickupAt: "2026 Sep 30 at 2.38AM",
       flightKind: "Arrival",
       flightTime: "02:05",
@@ -148,25 +148,25 @@ const state = {
       tickets: [],
       media: [],
       parkingKm: 0,
-      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "DEMO-TR-44212" },
+      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "TR-44212" },
     }),
-    Object.assign(job("DEMO-44216", "Departure", "Sample Guest", 2, "Departure", "30 September 2026", "—", "Demo Hotel", "Demo Airport", "Western", "Assigned", 0, 0, "", [], []), {
+    Object.assign(job("44216", "Departure", "Guest", 2, "Departure", "30 September 2026", "—", "Eden Beruwala", "Bandaranaike Airport", "Western", "Assigned", 0, 0, "", [], []), {
       service: "Departure",
       trf: "H-A",
       pair: "Hotel → Airport",
       fleet: "Car",
       group: "Individual",
-      combined: "DEMO-44212",
+      combined: "44212",
       km: 98,
       fromDate: "30 Sep 2026",
       toDate: "30 Sep 2026",
       rep: null,
       guide: "",
-      booking: "DEMO-BOOKING-2",
+      booking: "1238936",
       clients: ["Guest 1", "Guest 2"],
       clientStatus: "Client Picked",
-      agent: "Demo Travel Desk",
-      hotel: "Demo Hotel",
+      agent: "Paks Moscow",
+      hotel: "Eden Beruwala",
       pickupAt: "2026 Sep 30",
       flightKind: "Departure",
       flightTime: "—",
@@ -177,9 +177,9 @@ const state = {
       tickets: [],
       media: [],
       parkingKm: 0,
-      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "DEMO-TR-44216" },
+      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "TR-44216" },
     }),
-    Object.assign(job("DEMO-44218", "Internal", "Sample Guest", 2, "Transfer", "30 September 2026", "11:00", "Demo Hotel", "Demo Hotel", "Western", "Assigned", 0, 0, "", [], []), {
+    Object.assign(job("44218", "Internal", "Hotel guest", 2, "Transfer", "30 September 2026", "11:00", "Cinnamon Grand", "Galle Face Hotel", "Western", "Assigned", 0, 0, "", [], []), {
       service: "Transfer",
       trf: "H-H",
       pair: "Hotel → Hotel",
@@ -191,11 +191,11 @@ const state = {
       toDate: "30 Sep 2026",
       rep: null,
       guide: "",
-      booking: "DEMO-BOOKING-3",
+      booking: "1239001",
       clients: ["Hotel guest"],
       clientStatus: "Client Picked",
       agent: "Walk-in",
-      hotel: "Demo Hotel",
+      hotel: "Cinnamon Grand",
       pickupAt: "2026 Sep 30 at 11.00AM",
       flightKind: "Internal",
       flightTime: "—",
@@ -206,9 +206,9 @@ const state = {
       tickets: [],
       media: [],
       parkingKm: 0,
-      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "DEMO-TR-44218" },
+      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "TR-44218" },
     }),
-    Object.assign(job("DEMO-44224", "Round Tour", "Sample Guest 1", 2, "Round Tour", "30 September 2026", "15:40", "Demo Airport", "Demo Hotel Colombo", "Western", "Assigned", 0, 0, "DEMO 002", [], []), {
+    Object.assign(job("44224", "Round Tour", "N. Fernando", 2, "Round Tour", "30 September 2026", "15:40", "Bandaranaike Airport", "Galle Face Hotel", "Western", "Assigned", 0, 0, "UL 141", [], []), {
       service: "Round Tour",
       trf: "A-T",
       pair: "Round Tour",
@@ -218,13 +218,13 @@ const state = {
       km: 58,
       fromDate: "30 Sep 2026",
       toDate: "30 Sep 2026",
-      rep: { name: "Demo Airport Representative", phone: "0000000000" },
+      rep: { name: "Dushan Fonseka – Airport Rep", phone: "0703464346" },
       guide: "",
-      booking: "DEMO-BOOKING-4",
-      clients: ["Sample Guest 1", "Sample Guest 2"],
+      booking: "1239010",
+      clients: ["N. Fernando", "A. Fernando"],
       clientStatus: "Client Picked",
-      agent: "Demo Travel Desk",
-      hotel: "Demo Hotel Colombo",
+      agent: "Exotic Holidays",
+      hotel: "Galle Face Hotel",
       pickupAt: "2026 Sep 30 at 3.40PM",
       flightKind: "Arrival",
       flightTime: "15:40",
@@ -235,25 +235,25 @@ const state = {
       tickets: [],
       media: [],
       parkingKm: 0,
-      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "DEMO-TR-44224" },
+      payMeta: { status: "Pending", date: "30 Sep 2026", method: "Bank", reference: "TR-44224" },
     }),
-    Object.assign(job("DEMO-24091", "Colombo round", "Sample Guest 1", 2, "Round Tour", "30 September 2026", "15:40", "Demo Airport", "Demo Hotel Colombo", "Western", "Started", 4, 18500, "DEMO 002", [[7.1808, 79.8842], [7.09, 79.88], [6.95, 79.86], [6.927, 79.845]], [{ seat: "1", name: "Sample Guest 1", note: "Lead guest" }, { seat: "2", name: "Sample Guest 2", note: "Child seat" }]), {
+    Object.assign(job("EHI-24091", "Colombo round", "N. Fernando", 2, "Round Tour", "30 September 2026", "15:40", "Bandaranaike International Airport", "Galle Face Hotel", "Western", "Started", 4, 18500, "UL 141", [[7.1808, 79.8842], [7.09, 79.88], [6.95, 79.86], [6.927, 79.845]], [{ seat: "1", name: "N. Fernando", note: "Lead guest" }, { seat: "2", name: "A. Fernando", note: "Child seat" }]), {
       legs: [
-        { label: "Arrival", from: "Demo Airport", to: "Demo Hotel Colombo" },
-        { label: "Departure", from: "Demo Hotel Colombo", to: "Demo Airport" },
+        { label: "Arrival", from: "Bandaranaike Airport", to: "Galle Face Hotel" },
+        { label: "Departure", from: "Galle Face Hotel", to: "Bandaranaike Airport" },
       ],
-      places: ["Demo Airport", "Demo Stop 1", "Demo Stop 2", "Demo Hotel Colombo", "Colombo", "Demo Stop 2", "Demo Airport"],
+      places: ["Bandaranaike Airport", "Katunayake", "Peliyagoda", "Galle Face Hotel", "Colombo", "Katunayake", "Bandaranaike Airport"],
       returnRoute: [[6.927, 79.845], [6.95, 79.87], [7.09, 79.89], [7.1808, 79.8842]],
       pickedUp: true,
     }),
-    Object.assign(job("DEMO-24102", "Airport arrival", "Sample Guest 2", 2, "Arrival", "30 September 2026", "18:10", "Demo Airport", "Demo Hotel", "Western", "Pending", 0, 0, "DEMO 003", [], [{ seat: "1", name: "Sample Guest 2", note: "Lead guest" }]), {
-      legs: [{ label: "Arrival", from: "Demo Airport", to: "Demo Hotel" }],
+    Object.assign(job("EHI-24102", "Airport arrival", "K. Jayasuriya", 2, "Arrival", "30 September 2026", "18:10", "Bandaranaike Airport", "Cinnamon Grand", "Western", "Pending", 0, 0, "UL 308", [], [{ seat: "1", name: "K. Jayasuriya", note: "Lead guest" }]), {
+      legs: [{ label: "Arrival", from: "Bandaranaike Airport", to: "Cinnamon Grand" }],
       offerUntil: Date.now() + 15 * 60 * 1000,
     }),
-    Object.assign(job("DEMO-24118", "Demo city tour", "Sample Guest 3", 3, "Excursion", "2 October 2026", "09:00", "Demo Hotel Colombo", "Demo Landmark", "Western", "Pending", 0, 220, "", [], [{ seat: "1", name: "Sample Guest 3", note: "Demo guest" }]), {
+    Object.assign(job("EHI-24118", "Silk Route city", "M. Rossi", 3, "Excursion", "2 October 2026", "09:00", "Galle Face Hotel", "Gangaramaya", "Western", "Pending", 0, 220, "", [], [{ seat: "1", name: "M. Rossi", note: "Silk Route guest" }]), {
       legs: [
-        { label: "Departure", from: "Demo Hotel Colombo", to: "Demo Landmark" },
-        { label: "Arrival", from: "Demo Landmark", to: "Demo Hotel Colombo" },
+        { label: "Departure", from: "Galle Face Hotel", to: "Gangaramaya" },
+        { label: "Arrival", from: "Gangaramaya", to: "Galle Face Hotel" },
       ],
       offerUntil: Date.now() + 6 * 60 * 60 * 1000,
       offerHold: "office",
@@ -268,10 +268,10 @@ const state = {
       km: 42,
       fromDate: "2 Oct 2026",
       toDate: "2 Oct 2026",
-      guide: { name: "Demo Guide" },
+      guide: { name: "Dinesh Rathnayake" },
       rep: null,
     }),
-    Object.assign(job("DEMO-24070", "Demo drop", "Sample Guest 4", 1, "Transfer", "28 September 2026", "11:00", "Demo Pickup Point", "Demo Destination", "Western", "Completed", 5, 0, "", [], [{ seat: "1", name: "Sample Guest 4", note: "" }]), {
+    Object.assign(job("EHI-24070", "Negombo drop", "A. Perera", 1, "Transfer", "28 September 2026", "11:00", "Colombo Fort", "Negombo Beach", "Western", "Completed", 5, 0, "", [], [{ seat: "1", name: "A. Perera", note: "" }]), {
       service: "Transfer",
       trf: "H-H",
       pair: "Hotel → Hotel",
@@ -283,7 +283,7 @@ const state = {
       toDate: "28 Sep 2026",
       rep: null,
     }),
-    Object.assign(job("DEMO-24081", "Morning drop", "Sample Guest 5", 2, "Departure", "30 September 2026", "06:20", "Demo Hotel Colombo", "Demo Airport", "Western", "Completed", 5, 0, "DEMO 004", [], []), {
+    Object.assign(job("EHI-24081", "Morning drop", "S. Fernando", 2, "Departure", "30 September 2026", "06:20", "Galle Face Hotel", "Bandaranaike Airport", "Western", "Completed", 5, 0, "UL 102", [], []), {
       service: "Departure",
       trf: "H-A",
       pair: "Hotel → Airport",
@@ -295,7 +295,7 @@ const state = {
       toDate: "30 Sep 2026",
       rep: null,
     }),
-    Object.assign(job("DEMO-24074", "Demo city tour", "Sample Guest 6", 3, "Round Tour", "29 September 2026", "07:00", "Demo Hotel", "Demo Landmark", "Central", "Completed", 5, 0, "", [], []), {
+    Object.assign(job("EHI-24074", "Kandy run", "R. Silva", 3, "Round Tour", "29 September 2026", "07:00", "Cinnamon Grand", "Temple of the Tooth", "Central", "Completed", 5, 0, "", [], []), {
       service: "Round Tour",
       trf: "A-T",
       pair: "Round tour",
@@ -307,7 +307,7 @@ const state = {
       toDate: "29 Sep 2026",
       rep: null,
     }),
-    Object.assign(job("DEMO-24066", "Demo transfer", "Sample Guest 7", 2, "Transfer", "28 September 2026", "14:30", "Demo Hotel", "Demo Landmark", "Southern", "Completed", 5, 0, "", [], []), {
+    Object.assign(job("EHI-24066", "Galle drop", "L. Perera", 2, "Transfer", "28 September 2026", "14:30", "Mount Lavinia Hotel", "Galle Fort", "Southern", "Completed", 5, 0, "", [], []), {
       service: "Transfer",
       trf: "H-H",
       pair: "Hotel → Hotel",
@@ -321,17 +321,17 @@ const state = {
     }),
   ],
   cash: [
-    { id: "C-1", jobId: "DEMO-24091", title: "Transfer fare", amount: 18500, currency: "LKR", status: "With you", fromName: "Sample Guest 1", forCompany: true },
-    { id: "C-2", jobId: "DEMO-24091", title: "Parking", amount: 1500, currency: "LKR", status: "To collect", fromName: "Sample Guest 1", forCompany: true },
-    { id: "C-3", jobId: "DEMO-24070", title: "City tour fare", amount: 12000, currency: "LKR", status: "Handed over", date: "2026-09-29", fromName: "Sample Guest 4", officeName: "Demo Office User", officeDept: "Transport Department", forCompany: true },
-    { id: "C-4", jobId: "DEMO-24118", title: "Demo tour fare", amount: 50, currency: "USD", status: "To collect", fromName: "Sample Guest 3", forCompany: true },
+    { id: "C-1", jobId: "EHI-24091", title: "Transfer fare", amount: 18500, currency: "LKR", status: "With you", fromName: "N. Fernando", forCompany: true },
+    { id: "C-2", jobId: "EHI-24091", title: "Parking", amount: 1500, currency: "LKR", status: "To collect", fromName: "N. Fernando", forCompany: true },
+    { id: "C-3", jobId: "EHI-24080", title: "City tour fare", amount: 12000, currency: "LKR", status: "Handed over", date: "2026-09-29", fromName: "A. Perera", officeName: "Nadeesha Silva", officeDept: "Transport Department", forCompany: true },
+    { id: "C-4", jobId: "EHI-24118", title: "Silk Route fare", amount: 50, currency: "USD", status: "To collect", fromName: "M. Rossi", forCompany: true },
   ],
   expenses: [
-    { id: "X-1", jobId: "DEMO-24091", type: "Toll", amount: 800, currency: "LKR", note: "Demo route" },
-    { id: "X-2", jobId: "DEMO-24091", type: "Parking", amount: 400, currency: "LKR", note: "Demo hotel" },
+    { id: "X-1", jobId: "EHI-24091", type: "Toll", amount: 800, currency: "LKR", note: "Airport expressway" },
+    { id: "X-2", jobId: "EHI-24091", type: "Parking", amount: 400, currency: "LKR", note: "Galle Face" },
   ],
   advances: [
-    { id: "A-1", jobId: "DEMO-24091", title: "Fuel advance", amount: 5000, currency: "LKR", date: "2026-09-30" },
+    { id: "A-1", jobId: "EHI-24091", title: "Fuel advance", amount: 5000, currency: "LKR", date: "2026-09-30" },
   ],
   payouts: [
     { id: "P-1", title: "Week 39 trips", date: "2026-10-03", amount: 42500, currency: "LKR", status: "Upcoming" },
@@ -351,10 +351,10 @@ const state = {
     trips: 38,
     onTime: 96,
     reviews: [
-      { from: "Sample Guest 1", role: "Tourist", text: "Smooth drive and the child seat was ready at the airport.", score: 5, date: "2026-09-30", kind: "praise", tags: ["Clean car", "On time", "Child seat ready"] },
-      { from: "Demo Office User", role: "Transport Department", text: "Highway ticket and mileage sheet matched the demo tour.", score: 5, date: "2026-09-26", kind: "praise", tags: ["Clean car", "Safe driving"] },
+      { from: "N. Fernando", role: "Tourist", text: "Smooth drive and the child seat was ready at the airport.", score: 5, date: "2026-09-30", kind: "praise", tags: ["Clean car", "On time", "Child seat ready"] },
+      { from: "Nadeesha Silva", role: "Transport Department", text: "Highway ticket and mileage sheet matched the round tour.", score: 5, date: "2026-09-26", kind: "praise", tags: ["Clean car", "Safe driving"] },
       { from: "Ops desk", role: "Transport Department", text: "Pickup was late at Galle Face. The car was fine.", score: 3, date: "2026-09-18", kind: "complaint", tags: ["Late pickup"] },
-      { from: "Sample Guest 3", role: "Tourist", text: "The car smelled of smoke and the route was longer than agreed.", score: 2, date: "2026-09-12", kind: "complaint", tags: ["Dirty vehicle", "Wrong route"] },
+      { from: "M. Rossi", role: "Tourist", text: "The car smelled of smoke and the route was longer than agreed.", score: 2, date: "2026-09-12", kind: "complaint", tags: ["Dirty vehicle", "Wrong route"] },
     ],
   },
   documents: [
@@ -372,20 +372,20 @@ const state = {
     { name: "Revenue licence", expires: "2026-10-08" },
   ],
   specialNotes: [
-    { text: "Child seat needed at the demo pickup point.", jobId: "DEMO-24091" },
+    { text: "Child seat needed. Meet at arrivals door 2.", jobId: "EHI-24091" },
   ],
   specialServices: [
-    { name: "Demo service", text: "Welcome kit ready at the demo pickup point.", jobId: "DEMO-24091" },
+    { name: "Silk Route", text: "Welcome kit at arrivals door 2. Confirm with the guest before you leave the airport.", jobId: "EHI-24091" },
   ],
   bank: {
-    name: "Demo Bank",
-    branch: "Demo",
-    holder: "Demo Driver",
-    account: "DEMO-0000",
+    name: "Bank of Ceylon",
+    branch: "Moratuwa",
+    holder: "Oshada Pabasara Galappaththi",
+    account: "81234567",
     rate: "LKR 85 per km · bata LKR 2,500 a day",
   },
   equipment: [
-    { name: "Bus board", code: "BB-DEMO", status: "With you" },
+    { name: "Bus board", code: "BB-1528", status: "With you" },
     { name: "Uniform", code: "Navy set · size M", status: "With you" },
     { name: "Radio", code: "Not issued", status: "At office" },
   ],
@@ -406,18 +406,18 @@ const state = {
     "I have arrived at the pickup point.",
     "I am on the way to you.",
     "Please meet me at arrivals door 2.",
-    "The vehicle is a demo vehicle, plate DEMO-0001.",
+    "The vehicle is a Toyota Prius, plate ND-9012.",
   ],
   messages: {
-    client: [{ from: "guest", text: "We are at the demo pickup point.", time: "15:20" }],
-    office: [{ from: "office", text: "Child seat is confirmed for DEMO-24091.", time: "14:02" }],
+    client: [{ from: "guest", text: "We are at arrivals door 2.", time: "15:20" }],
+    office: [{ from: "office", text: "Child seat is confirmed for EHI-24091.", time: "14:02" }],
   },
-  officeFeed: [{ title: "Transport Department", text: "Child seat is confirmed for DEMO-24091.", time: "14:02" }],
+  officeFeed: [{ title: "Transport Department", text: "Child seat is confirmed for EHI-24091.", time: "14:02" }],
   incidents: [],
   fleet: [
-    { plate: "DEMO-0002", model: "Toyota HiAce", category: "Van", seats: 8, region: "Western", status: "Available" },
-    { plate: "DEMO-0003", model: "Toyota Prius", category: "Car · Semi luxury", seats: 3, region: "Western", status: "On a job" },
-    { plate: "DEMO-0004", model: "Toyota KDH", category: "Van", seats: 10, region: "Central", status: "Available" },
+    { plate: "WP-4421", model: "Toyota HiAce", category: "Van", seats: 8, region: "Western", status: "Available" },
+    { plate: "ND-1180", model: "Toyota Prius", category: "Car · Semi luxury", seats: 3, region: "Western", status: "On a job" },
+    { plate: "CP-2204", model: "Toyota KDH", category: "Van", seats: 10, region: "Central", status: "Available" },
   ],
 };
 
@@ -440,8 +440,6 @@ function heldAmount(item, code) {
   return (item.currency || "LKR") === code ? Number(item.amount) || 0 : 0;
 }
 const findJob = (id) => state.jobs.find((item) => item.id === (id || state.selectedJob)) || state.jobs[0];
-const DEMO_NOTICE = '<aside class="demo-notice" role="note"><strong>Public demo only.</strong> This app has no real authentication or backend. Use sample data only; never enter real credentials, personal, identity, or payment information.</aside>';
-
 function go(path) {
   state.error = "";
   state.sheet = "";
@@ -604,7 +602,7 @@ function shell(title, subtitle, body) {
   const back = path === "/notifications" ? "/home" : path.startsWith("/jobs") || path === "/manifest" || path === "/complete" ? "/jobs" : "/profile";
   return `<div class="phone">
     ${main ? "" : `<header class="subhead"><button data-go="${back}" aria-label="Back">‹</button><h1>${esc(title)}</h1></header>`}
-    <div class="phone-body">${DEMO_NOTICE}${body}</div>
+    <div class="phone-body">${body}</div>
     ${main ? tabBar(path) : ""}
   </div>`;
 }
@@ -744,7 +742,7 @@ function pageStatus() {
     ${state.error ? `<div class="error">${esc(state.error)}</div>` : ""}
     ${field("YOUR REFERENCE", "status-ref", state.reference, "text", 'placeholder="Reference, NIC or mobile"')}
     <button class="btn block" data-act="check-status">Check status</button>
-    ${state.statusHit ? `<div class="card" style="margin-top:14px"><b>YOUR REFERENCE</b><p>${esc(state.reference || "DEMO-REF-20481")}</p>${pill("Waiting for review")}<p class="meta">The office reviews it and messages you on WhatsApp. Usually two working days.</p><button class="btn ghost small" data-act="copy-ref">Copy reference</button></div>` : ""}
+    ${state.statusHit ? `<div class="card" style="margin-top:14px"><b>YOUR REFERENCE</b><p>${esc(state.reference || "EHI-REF-20481")}</p>${pill("Waiting for review")}<p class="meta">The office reviews it and messages you on WhatsApp. Usually two working days.</p><button class="btn ghost small" data-act="copy-ref">Copy reference</button></div>` : ""}
     <div class="actions" style="margin-top:16px"><button class="btn ghost" data-go="/login">Back to sign in</button></div>`);
 }
 
@@ -1424,9 +1422,9 @@ let mileCache;
 function mileageLedger() {
   if (mileCache) return mileCache;
   const routes = {
-    transfer: [["DEMO-TR-1", "Demo pickup to Demo hotel"], ["DEMO-TR-2", "Demo hotel to Demo airport"], ["DEMO-TR-3", "Demo city to Demo destination"], ["DEMO-TR-4", "Demo hotel to Demo airport"], ["DEMO-TR-5", "Demo hotel to Demo hotel"], ["DEMO-TR-6", "Demo destination to Demo city"]],
-    excursion: [["DEMO-EX-1", "Demo hotel to Demo landmark"], ["DEMO-EX-2", "Demo city excursion"], ["DEMO-EX-3", "Demo beach to Demo fort"], ["DEMO-EX-4", "Demo lagoon loop"]],
-    round: [["DEMO-24091", "Demo airport to Demo hotel and back"], ["DEMO-RT-1", "Demo city round"], ["DEMO-RT-2", "Demo landmark round"], ["DEMO-RT-3", "Demo beach round"]],
+    transfer: [["TR-44212", "Galle Road → Eden Beruwala"], ["TR-44216", "Eden Beruwala → BIA"], ["EHI-24070", "Colombo Fort → Negombo"], ["TR-2404", "Mount Lavinia → BIA"], ["TR-2411", "Cinnamon Grand → Galle Face"], ["TR-2418", "Negombo → Colombo Fort"]],
+    excursion: [["EX-2418", "Galle Face → Gangaramaya"], ["EX-2408", "Colombo → Kandy viewpoint"], ["EX-2415", "Bentota → Galle Fort"], ["EX-2422", "Negombo lagoon loop"]],
+    round: [["EHI-24091", "BIA → Galle Face → BIA"], ["RT-2406", "Colombo city round"], ["RT-2414", "Kandy temple round"], ["RT-2421", "Bentota beach round"]],
   };
   const reasons = ["Guest cancelled on arrival", "Vehicle not free", "Below the agreed rate", "Pickup time too tight"];
   const rows = [];
@@ -1503,11 +1501,11 @@ function eachDay(from, to, visit) {
 
 function demoJobList(from, to) {
   const samples = [
-    { trf: "A-H", pair: "Airport to Hotel", service: "Arrival", from: "Demo Airport", to: "Demo Hotel Colombo", km: 32 },
-    { trf: "H-A", pair: "Hotel to Airport", service: "Departure", from: "Demo Hotel Colombo", to: "Demo Airport", km: 34 },
-    { trf: "H-H", pair: "Hotel to Hotel", service: "Transfer", from: "Demo Hotel", to: "Demo destination", km: 18 },
+    { trf: "A-H", pair: "Airport → Hotel", service: "Arrival", from: "Bandaranaike Airport", to: "Galle Face Hotel", km: 32 },
+    { trf: "H-A", pair: "Hotel → Airport", service: "Departure", from: "Galle Face Hotel", to: "Bandaranaike Airport", km: 34 },
+    { trf: "H-H", pair: "Hotel → Hotel", service: "Transfer", from: "Cinnamon Grand", to: "Mount Lavinia", km: 18 },
     { trf: "A-T", pair: "Round Tour", service: "Round Tour", from: "Colombo", to: "Kandy", km: 116 },
-    { trf: "A-T", pair: "Excursion", service: "Excursion", from: "Demo Hotel Colombo", to: "Demo Landmark", km: 22 },
+    { trf: "A-T", pair: "Excursion", service: "Excursion", from: "Galle Face Hotel", to: "Gangaramaya", km: 22 },
   ];
   const out = [];
   let index = 0;
@@ -1529,7 +1527,7 @@ function demoJobList(from, to) {
       fromDate: label,
       toDate: label,
       status: key < todayKey() ? "Completed" : "Assigned",
-      rep: sample.service === "Excursion" ? { name: "Demo Guide" } : null,
+      rep: sample.service === "Excursion" ? { name: "Dinesh Rathnayake – Guide" } : null,
       demo: true,
     });
     index += 1;
@@ -1599,7 +1597,7 @@ function pageLedger() {
     ${earnCalendar()}
     <article class="salary-box year period-total"><span>${title}</span><b>LKR ${stats.salary.toLocaleString()}</b><small>${prettyDate(from)} – ${prettyDate(to)}</small></article>
     <h2 class="section">Mileage</h2>
-    <section class="soft-card fleet-chip"><span>DEMO-0001 · Car · 3 seats · Toyota Prius</span></section>
+    <section class="soft-card fleet-chip"><span>ND-9012 · Car · 3 seats · Toyota Prius</span></section>
     <div class="mile-grid">
       ${[
         ["mint", "transfer", "Transfer mileage", `${transferKm.toLocaleString()} km`],
@@ -1948,7 +1946,7 @@ function pageIncident() {
 }
 
 function authWrap(inner) {
-  return `<div class="app-auth"><section class="brand-pane"><div><img src="assets/logo.png" alt="Exotic Holidays International"><h1>Partner workspace</h1><p>Jobs, navigation, cash, and documents for EHI drivers, guides, and fleet companies.</p><div class="brand-points"><span>Accept or decline a job</span><span>Run the route on the map</span><span>Record cash and weekly earnings</span></div></div><div>English · Sinhala · Tamil</div></section><section class="auth-pane"><div class="auth-card"><div class="lang-row" style="margin-bottom:12px">${["en", "si", "ta"].map((code) => `<button class="chip ${state.lang === code ? "on" : ""}" data-lang="${code}">${code.toUpperCase()}</button>`).join("")}</div>${DEMO_NOTICE}${inner}</div></section></div>`;
+  return `<div class="app-auth"><section class="brand-pane"><div><img src="assets/logo.png" alt="Exotic Holidays International"><h1>Partner workspace</h1><p>Jobs, navigation, cash, and documents for EHI drivers, guides, and fleet companies.</p><div class="brand-points"><span>Accept or decline a job</span><span>Run the route on the map</span><span>Record cash and weekly earnings</span></div></div><div>English · Sinhala · Tamil</div></section><section class="auth-pane"><div class="auth-card"><div class="lang-row" style="margin-bottom:12px">${["en", "si", "ta"].map((code) => `<button class="chip ${state.lang === code ? "on" : ""}" data-lang="${code}">${code.toUpperCase()}</button>`).join("")}</div>${inner}</div></section></div>`;
 }
 
 function sheet() {
@@ -2396,7 +2394,7 @@ document.addEventListener("click", (event) => {
     if (name === "Availability & Service Coverage" && !form.regions.length) { state.error = "Select at least one operating region"; render(); return; }
     if (name === "Review & Submit") {
       if (!form.confirmed) { state.error = "I confirm my licence is valid and unexpired, and that every document I upload is genuine."; render(); return; }
-      state.reference = state.reference || "DEMO-REF-20481";
+      state.reference = state.reference || "EHI-REF-20481";
       go("/register/submitted");
       return;
     }
